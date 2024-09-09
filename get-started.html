@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="./Untitled design.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="./get-started.css">
+</head>
+<body>
+
+    <section class="container">
+        <div class="left-section">
+            <a href="home.html#serve" class="back-button">&#8592;</a>
+            <h1>GET STARTED<br>with Us</h1>
+            <p>Fill out the form to schedule your consultation with us.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon">&#128222;</div>
+                    <div class="text">+234-803-238-3030, +234-802-579-3000</div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">&#128231;</div>
+                    <div class="text">obbah_consult234@yahoo.com</div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">&#128205;</div>
+                    <a href="https://www.google.com/maps/place/Obbah+Consult/@6.597106,3.3422301,927m/data=!3m2!1e3!4b1!4m6!3m5!1s0x103b9225cf955e8b:0xb36c52e3fc605c0f!8m2!3d6.597106!4d3.344805!16s%2Fg%2F11bbrff4k3!5m1!1e1?entry=ttu">
+                        <div class="text">7, Seidu Ajibowu Street, off Toyin Street, Ikeja, Lagos State, Nigeria</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <form action="https://formspree.io/f/movabdgb" method="POST" class="appointment-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Required:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="Scholarship Assistance">Scholarship Assistance</option>
+                        <option value="Career Counseling">Career Counseling</option>
+                        <option value="Application Preparation">Application Preparation</option>    
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-date">Preferred Date:</label>
+                    <input type="date" id="preferred-date" name="preferred-date" required>
+                    <p id="date-error" style="color: red; display: none;">Please select a weekday.</p>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (Optional):</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
